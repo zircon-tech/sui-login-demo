@@ -28,9 +28,9 @@ const SignInModal = ({
             <Image
               src={Scale3}
               alt="Logo"
-              className="h-10 w-10 rounded-full"
-              width={20}
-              height={20}
+              className="h-10 w-100 rounded-full"
+              width={100}
+              height={50}
             />
           </a>
           <h3 className="font-display text-2xl font-bold">Sign In</h3>

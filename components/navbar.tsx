@@ -28,22 +28,21 @@ export default function NavBar({ session }: { session: Session | null }) {
             <Image
               src={Scale3}
               alt="Scale3 logo"
-              width="30"
-              height="30"
+              width="100"
+              height="50"
               className="mr-2 rounded-sm"
             ></Image>
-            <p>zkLogin</p>
           </Link>
           <div>
             {session ? (
               <UserDropdown session={session} />
             ) : (
               <button
-                className="flex gap-2 items-center rounded-full border border-gray-300 p-1.5 px-4 text-sm transition-all bg-gradient-to-tr from-blue-400 via-white to-purple-400 background-animate"
+                className="flex gap-2 items-center rounded-full border border-gray-300 p-1.5 px-4 text-sm"
                 onClick={() => setShowSignInModal(true)}
               >
                 <Google className="h-1 w-1" />
-                Get Started
+                Access
               </button>
             )}
           </div>

@@ -86,24 +86,6 @@ export default async function Home() {
               >
                 {address}
               </p>
-              <p
-                className="animate-fade-up text-center text-gray-500 opacity-0 [text-wrap:balance] md:text-sm"
-                style={{
-                  animationDelay: "0.25s",
-                  animationFillMode: "forwards",
-                }}
-              >
-                Powered by{" "}
-                <a
-                  href="https://docs.sui.io/testnet/build/zk_login"
-                  target="_blank"
-                  className="underline"
-                  rel="noopener noreferrer"
-                >
-                  Sui zkLogin
-                </a>{" "}
-                - a new era of privacy-preserving web3 authentication.
-              </p>
             </div>
           </>
         )}
@@ -114,7 +96,7 @@ export default async function Home() {
               className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-3xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm [text-wrap:balance] md:text-6xl md:leading-[5rem]"
               style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
             >
-              Open source zkLogin primitives for your next project
+              Mith ZK Login Demo App
             </h1>
             <p
               className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 [text-wrap:balance] md:text-xl"
@@ -122,48 +104,8 @@ export default async function Home() {
             >
               A demo application to showcase zkLogin authentication.
             </p>
-            <p
-              className="animate-fade-up text-center text-gray-500 opacity-0 [text-wrap:balance] md:text-md mt-2"
-              style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
-            >
-              Powered by{" "}
-              <a
-                href="https://docs.sui.io/testnet/build/zk_login"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline"
-              >
-                Sui zkLogin
-              </a>{" "}
-              and built by{" "}
-              <a
-                href="https://scale3labs.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline"
-              >
-                Scale3.
-              </a>
-            </p>
           </>
         )}
-        <div
-          className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 opacity-0"
-          style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
-        >
-          <a
-            className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
-            href="https://github.com/Scale3-Labs/zklogin-demo"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Github />
-            <p>
-              <span className="hidden sm:inline-block">Star on</span> GitHub{" "}
-              <span className="font-semibold">{nFormatter(stars)}</span>
-            </p>
-          </a>
-        </div>
       </div>
     </>
   );

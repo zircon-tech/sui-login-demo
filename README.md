@@ -25,7 +25,7 @@ MASTER_SEED=your_master_seed_here
 
 ### 3. NextAuth Environment Variables
 
-Configure the necessary environment variables for NextAuth:
+Create a `.env` file and configure the necessary environment variables for NextAuth:
 
 ```env
 NEXT_PUBLIC_ENVIRONMENT=development
@@ -36,7 +36,7 @@ NEXTAUTH_SECRET=testsecret
 ```
 
 ### 4. Database Configuration
-This repository employs the Prisma adapter with a PostgreSQL database to maintain user account details. If you're deploying on Vercel, you can readily create a PostgreSQL database for this purpose. Once your database is operational, adjust the following environment variables:
+This repository employs the Prisma adapter with a PostgreSQL database to maintain user account details. Adjust the following environment variables:
 
 ```env
 POSTGRES_DATABASE="verceldb"

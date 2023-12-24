@@ -7,17 +7,17 @@ import "./globals.css";
 // import Footer from "@/components/layout/footer";
 
 export const metadata = {
-  title: "Scale3 zkLogin - Authentication for your next project on Sui",
+  title: "Sui Authentication",
   description:
-    "Scale3 zkLogin is the all-in-one solution for your next project on Sui. It includes a design system, authentication, analytics, and more.",
+    "",
   twitter: {
     card: "summary_large_image",
-    title: "Scale3 zkLogin - Authentication for your next project on Sui",
+    title: "zkLogin - Authentication on Sui",
     description:
-      "Scale3 zkLogin is the all-in-one solution for your next project on Sui. It includes a design system, authentication, analytics, and more.",
-    creator: "@scale3labs",
+      "",
+    creator: "@wolivera",
   },
-  metadataBase: new URL("https://zklogin.scale3labs.com"),
+  metadataBase: new URL("https://mith.io"),
   themeColor: "#FFF",
 };
 
@@ -29,7 +29,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={cx(sfPro.variable, inter.variable)}>
-        <div className="fixed h-screen w-full bg-gradient-to-br from-purple-200 via-white to-blue-200" />
+        <div className="fixed h-screen w-full bg-gradient-to-br from-blue-400 via-white to-gray-200" />
         <Suspense fallback="...">
           <Nav />
         </Suspense>
