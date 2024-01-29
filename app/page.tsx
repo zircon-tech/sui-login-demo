@@ -1,34 +1,15 @@
-// "use client";
-
-import { Github } from "@/components/icons";
+import Mint from "@/components/mint";
 import { authOptions } from "@/lib/auth";
 import prisma from "@/lib/prisma";
 import { deriveUserSalt } from "@/lib/salt";
-import { nFormatter } from "@/lib/utils";
 import { jwtToAddress } from "@mysten/zklogin";
 import { getServerSession } from "next-auth/next";
 
 export default async function Home() {
-  const { stargazers_count: stars } = await fetch(
-    "https://api.github.com/repos/Scale3-Labs/zklogin-demo",
-    {
-      ...(process.env.GITHUB_OAUTH_TOKEN && {
-        headers: {
-          Authorization: `Bearer ${process.env.GITHUB_OAUTH_TOKEN}`,
-          "Content-Type": "application/json",
-        },
-      }),
-      // data will revalidate every 24 hours
-      // next: { revalidate: 86400 },
-    }
-  )
-    .then((res) => res.json())
-    .catch((e) => console.log(e));
-
   const session = await getServerSession(authOptions);
 
   // if the user is logged in, fetch their address
-  let address = null;
+  let address = '';
   if (session !== null) {
     const email = session?.user?.email as string;
 
@@ -86,6 +67,9 @@ export default async function Home() {
               >
                 {address}
               </p>
+            </div>
+            <div className="flex w-full flex-col mt-3">
+              <Mint />
             </div>
           </>
         )}

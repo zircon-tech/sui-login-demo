@@ -12,7 +12,7 @@
     "@mysten/dapp-kit": "^0.1.0",
     "@mysten/deepbook": "^0.5.1",
     "@mysten/kiosk": "^0.7.1",
-    "@mysten/sui.js": "^0.43.0",
+    "@mysten/sui.js": "^0.43.3",
     "@mysten/wallet-kit": "^0.7.4",
     "@mysten/zklogin": "^0.1.5",
     "@next-auth/prisma-adapter": "^1.0.7",
