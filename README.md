@@ -1,6 +1,6 @@
 # SUI zkLogin Integration with Next.js using NextAuth
 
-This demo application demonstrates the integration of SUI zkLogin using NextAuth in a Next.js app. Users can log in with their Gmail accounts and generate a persistent SUI address that remains unchanged as long as the same Gmail account is used for logging in.
+This [demo](https://www.loom.com/share/cc2a3620807347798264bc26ebc87f79?sid=08adad71-8171-4045-904f-75e8fcf50161) application demonstrates the integration of SUI zkLogin using NextAuth in a Next.js app. Users can log in with their Gmail accounts and generate a persistent SUI address that remains unchanged as long as the same Gmail account is used for logging in.
 
 ## Setup
 
